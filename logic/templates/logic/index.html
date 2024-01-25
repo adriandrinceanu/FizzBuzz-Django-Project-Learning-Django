@@ -1,0 +1,13 @@
+<h1>FizzBuzz checker</h1>
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Submit</button>
+</form>
+
+{% if result %}
+    <ul>
+        {{ result }}
+    </ul>
+{% endif %}
